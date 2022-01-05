@@ -3,17 +3,18 @@
     padding: 0;
 }
 .main_Nav{
-    height: 36px;
+    height: 30px;
     width: 100%;
     background-color: #2874f0;
-    display: flex;
     padding:0.7em 10em;
-    border: 2px solid red;
-    /* justify-content: space-between; */
+}
+.header{
+    display: flex;
+    width: 80%;
+    height: 100%;
 }
 .logo{
     width: 100px;
-    margin-right: 0.8em;
 }
 .logo .img-1
 {
@@ -23,7 +24,7 @@
 .logo .img-2
 {
     height: 30%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1px;
     color: white;
     font-style: italic;
@@ -38,12 +39,16 @@
     height: 100%;
     outline: none;
     border:0;
+    padding-left:1em;
    
 } 
 .login,.more,.cart{
     width: 100px;
     display: flex;
     align-items: center;
+}
+.login{
+    margin-left: 1.6em;
 }
 .login button,
 .more button,
