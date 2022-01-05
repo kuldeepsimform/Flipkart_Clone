@@ -3,10 +3,10 @@
     padding: 0;
 }
 .main_Nav{
-    height: 30px;
+    height: 40px;
     width: 100%;
     background-color: #2874f0;
-    padding:0.7em 10em;
+    padding:0.5em 10em;
 }
 .header{
     display: flex;
@@ -15,10 +15,13 @@
 }
 .logo{
     width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .logo .img-1
 {
-    height: 70%;
+    height: 50%;
 }
 
 .logo .img-2
@@ -30,9 +33,10 @@
     font-style: italic;
 }
 .search_input {
-    width: 400px;
+    width: 500px;
     height: 100%;
     background-color: red;
+    border-radius: 2px;
 }
 .search_input input{
     width: 100%;
@@ -40,22 +44,45 @@
     outline: none;
     border:0;
     padding-left:1em;
-   
+    border-radius: 2px;
 } 
-.login,.more,.cart{
-    width: 100px;
+.sub_menu{
+    display: flex;
+    margin-left: 2em;
+}
+.login{
+    width: 120px;
     display: flex;
     align-items: center;
 }
-.login{
-    margin-left: 1.6em;
+.more,.cart{
+    width: 80px;
+    display: flex;
+    align-items: center;
 }
-.login button,
-.more button,
-.cart button{
+.login,.more{
+    margin-left: 1.6em;
+    
+}
+.login button{
     height: 80%;
     width: 100%;
-} 
+    background: white;
+    border: 0;
+    color: #2874f0;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.more button,
+.cart button{
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+}
+
 .more button,
 .cart button{
     background: none;
