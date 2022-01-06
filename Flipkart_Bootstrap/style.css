@@ -30,6 +30,9 @@
     color: #2874f0;
     font-size: 1.3rem;
 }
+.sub_menu{
+    border: 1px solid red;
+}
 .sub_menu>ul>li>a,
 .sub_menu>ul>li>a:hover{
     color: white;
@@ -38,9 +41,17 @@
     margin: 0 1.5em;
 }
 .login{
-    color: #2874f0 !important;
     background-color: white;
-    width: 100px;
+    width: 120px;
     text-align: center;
-    height: 35px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+}
+.login a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #2874f0 !important; 
 }
