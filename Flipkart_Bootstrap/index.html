@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Flipkart</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-nav">
-      <div class="container set_header">
-        <a class="navbar-brand" href="#">
-          <div class="img-1">
-            <img
-              src="/img/flipkart-plus_logo.png"
-              alt=""
-              style="width: 100%; height: 100%"
-            />
-          </div>
-          <div class="img-2">
-            <span>Explore <i style="color: #ffe500">Plus</i> </span>
-            <img
-              src="/img/plus_logo.png"
-              alt=""
-              style="height: 60%; width: 15%"
-            />
-          </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex search_btn" style="width: 60%">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search for products, brands and more"
-              aria-label="Search"
-            />
-            <button class="btn" type="submit">
-              <i class="fa fa-search"></i>
-            </button>
-          </form>
-          <div class="sub_menu">
-            <ul class="navbar-nav">
-              <li class="nav-item login" >
-                <a class="nav-link" type="button" aria-current="page" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><i class="fa fa-bell text-primary"></i> Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#"> <i class="fa fa-shopping-basket "></i> Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <div class="img1">
+          <a href=""><img src="/img/flipkart-plus_logo.png" alt="" style="height: auto;max-width: 95%;"></a>
+        </div>
+        <div class="img2">
+          <a href="">Explore <span>Plus&nbsp;</span><img src="/img/plus_logo.png" alt="" style="height: auto;width: 10%;"></a>
         </div>
       </div>
-    </nav>
+      <div class="searchbar">
+        <div class="search">
+          <input type="search" name="" id="" placeholder="Search for products, brands and more">
+        </div>
+        <div class="search_icon">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <div class="submenu">
+        <div class="login">
+          <button class="login_btn">Login</button>
+        </div>
+        <div class="more">
+          <button>More <i class="fa fa-angle-down"></i></button>
+        </div>
+        <div class="cart">
+          <button><i class="fa fa-shopping-cart"></i> Cart</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="header_section">
+      <div class="card">
+        <div class="img">
+          <img src="/img/top_offer.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Top Offers</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Grocery.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Grocery</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Mobiles.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Mobiles</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Fashion.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Fashion <i class="fa fa-angle-down"></i></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Electronics.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Electronics <i class="fa fa-angle-down"></i></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Home.jpg" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Home <i class="fa fa-angle-down"></i></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Appliances.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Appliances <i class="fa fa-angle-down"></i></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Travel.png" alt="" style="height: 100%; width: 100%;">
+        </div>
+        <div class="text">
+          <p>Travel</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="/img/Beauty, Toys & More.png" alt="" style="height: 100%; width: auto;">
+        </div>
+        <div class="text">
+          <p>Beauty, Toys & More <i class="fa fa-angle-down"></i></p>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  <section class="section_offer">
+    <div class="card">
+      <div class="subcard">
+        <div class=""></div>
+      </div>
+      <div class="adcard"></div>
+    </div>
+    <div class="card">
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </section>
+</body>
 </html>
