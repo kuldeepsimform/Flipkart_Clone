@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 .container{
     width: 75%;
@@ -111,6 +112,7 @@ header{
     height: 100px;
     width: 100%;
     border-bottom: 2px solid lightgray;
+    position: relative;
 }
 .header_section{
     width: 90%;
