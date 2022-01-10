@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #f1f3f6;
+}
 
 .navbar {
     width: 100%;
@@ -13,6 +16,8 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 .container{
     width: 75%;
@@ -32,6 +37,9 @@
 }
 .logo .img2{
     font-size:0.8em;
+}
+.logo .img2:hover a{
+    border-bottom: 1px solid #ffe500;
 }
 .logo .img2 a{
     color: white;
@@ -71,6 +79,7 @@
     transform: translate(-3%,-50%);
     font-size: 1.3rem;
     color: #2874f0;
+    cursor: pointer;
 }
 .submenu{
     height: 100%;
@@ -96,6 +105,7 @@
     color: #2874f0;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
 }
 .more button,
 .cart button{
@@ -107,12 +117,14 @@
     color: white;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
 }
 header{
     height: 100px;
     width: 100%;
-    border-bottom: 2px solid lightgray;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
     position: relative;
+    margin-top: 3em;
 }
 .header_section{
     width: 90%;
@@ -128,6 +140,10 @@ header{
     height: 80%;
     width:auto;
     text-align: center;
+    cursor: pointer;
+}
+.card:hover .text p{
+    color: #2874f0;
 }
 .header_section .card .img{
     height: 80%;
@@ -144,41 +160,41 @@ header{
     width: 100%;
 }
 .section_offer .card{
-    height: 280px;
-    border-bottom: 3px solid lightgray;
+    height: 360px;
     width: 90%;
-    margin: 0.5em auto;
+    margin: 1.3em auto;
     display: flex;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%)
 }
 .card .subcard
 {
     height: 100%;
-    width: 85%;
+    width: 80%;
     
 }
 .card .adcard{
     height: 100%;
-    width: 15%;
+    width: 20%;
     padding: 0.2em;
-    
+    cursor: pointer;
 }
 .subcard .subcardheader{
     height: 20%;
     width: 100%;
     display: flex;
     position: relative;
-    border-bottom:2px solid lightgray;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%)
 }
 .subcardheader .heading ,
 .subcardheader .time{
-    width: 15%;
+    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .subcardheader .time{
     color: rgba(0, 0, 0, 0.699);
@@ -196,10 +212,11 @@ header{
     background-color: #2874f0;
     border: none;
     outline: none;
-    height: 70%;
-    width: 90%;
+    height: 60%;
+    width: 100%;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 .subcard .product{
     height: 80%;
@@ -214,6 +231,7 @@ header{
     transform: translate(-0%,-50%);
     box-shadow: 0 0 1px black;
     border-radius: 2px;
+    z-index: 999;
     
 }
 .next button{
@@ -229,14 +247,22 @@ header{
 {
     width: 20%;
     height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .productcard .prodcutimg
 {
-    height: 60%;
+    height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.productcard:hover .prodcutimg{
+    transform: scale(1.1);
 }
 .bookcard{
     width: 100% !important;
@@ -246,6 +272,25 @@ header{
     height: 30%;
     width: 100%;
     text-align: center;
+    padding: 1em;
+}
+.producttext p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.3em 0;
+}
+.producttext .productName{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.producttext .productAd{
+    font-size: 0.9rem;
+    color: #388e3c;
+}
+.producttext .productSubAd{
+    font-size: 0.9rem;
+    opacity: 0.6;
 }
 .heading-subcard{
     width: 30%;
